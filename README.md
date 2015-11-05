@@ -18,5 +18,17 @@ These projects are written in Java and the builds are based on Maven. Requiremen
 
 Builds have been tested with Java version 1.8.0_60 and Maven 3.3.3. The version of Java you choose to build with will be dependent on the requirements of your use case.
 
-The build for Jira version6 has an additional dependency, the latest OneLogin java-saml jar (java-saml-1.1.2.jar), from the onelogin/java-saml project on GitHub. So for building Jira version6 the steps are: sync onelogin/java-saml, build onelogin/java-saml (it's also a Maven/Java project). Run 'mvn clean install' to place the java-saml-1.1.2.jar in your local Maven repository. Next pull the lastest from onelogin/atlassian and run 'mvn clean install' from version6 to bulid your Jira version6 artifacts.  
+To build one of the Atlassian projects:
+
+1. Cync to the latest of onlogin/atlassian
+2. cd to the project you would like to build. For example confluence/version4
+3. run 'mvn clean install'
+
+
+The build for Jira version6 has an additional dependency, the latest OneLogin java-saml jar (java-saml-1.1.2.jar), from the onelogin/java-saml project on GitHub. So for building Jira version6 the steps are: 
+
+1. sync onelogin/java-saml
+2. build onelogin/java-saml (it's also a Maven/Java project). 
+3. Run 'mvn clean install' to place the java-saml-1.1.2.jar in your local Maven repository
+4. Next pull the lastest from onelogin/atlassian and run 'mvn clean install' from version6 to bulid your Jira version6 artifacts as above.
 
