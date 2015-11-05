@@ -2,13 +2,11 @@
 ## OneLogin Authenticators for Confluence and Jira
 -----
 Overview
------
 
 The included projects are for the purpose of autheticating with Atlassian's Jira and Confluence. Documentation for setting up a particular project for a particular purposes is included in each project. That is to say documentation for setting up and configuring Confluence is in the confluence directory. Documentation for Jira is in the Jira directories.
 
 -----
 Builds
------
 
 These projects are written in Java and the builds are based on Maven. Requirements for building include a) a current version of Java and b) a current version of Maven. For details on Maven seen https://maven.apache.org/. Builds have been tested with Java version 1.8.0_60 and Maven 3.3.3. The version of Java you choose to build with will be dependent on the requirements of your use case.
 
