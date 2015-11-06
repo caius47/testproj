@@ -24,6 +24,9 @@ To build one of the Atlassian projects:
 2. cd to the project you would like to build. For example confluence/version4
 3. run 'mvn clean install'
 
+The build for confluence version4 may require you to add the customauth-conf jar file to your local maven repo. To do so run the following command from the version4 directory 'mvn install:install-file -Dfile=customauth-conf-0.4.jar -DgroupId=com.onelogin -DartifactId=customauth-conf -Dversion=0.4 -Dpackaging=jar'
+
+The build for Jira version4 may require that you add the customauth-jira jar file to your local maven repo. To do so run the following command from the jira/version4 directory 'mvn install:install-file -Dfile=customauth-jira-0.4.jar -DgroupId=com.onelogin -DartifactId=customauth-jira -Dversion=0.4 -Dpackaging=jar'
 
 The build for Jira version6 has an additional dependency, the latest OneLogin java-saml jar (java-saml-1.1.2.jar), from the onelogin/java-saml project on GitHub. So for building Jira version6 the steps are: 
 
